@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: false,
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
@@ -37,7 +37,11 @@ module.exports = {
         'alice-blue': '#f4f8fc',
         'red': '#FF0000',
         'grey': '#fbfbfb',
-      }
+      },
+      backgroundImage: theme => ({
+        'globe': "url('/svg/globe.svg')",
+        'search': "url('/svg/search.svg')",
+      }),
     },
   },
   variants: {
