@@ -1,13 +1,13 @@
 
 const Reasons = () => {
     return (
-        <div className="pl-12 pr-12 h-screen">
+        <div className="px-20 py-20 h-screen text-bluetiful">
             <div>
-                <h2>What makes our platform one of a kind</h2>
+                <h2 className="text-4xl font-bold text-center">What makes our platform <br/>one of a kind</h2>
             </div>
 
             <section>
-                lore iod dfg dfg dg hfdhfgh fghfdhg    
+                 
             </section>            
         </div>
     );

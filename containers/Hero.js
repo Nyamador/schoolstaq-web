@@ -1,15 +1,22 @@
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from 'aos'
 
 import {NavBar, Button} from "../components";
 
 
 const Hero = () => {
+
+    useEffect(() => {
+        AOS.init()
+    },[])
+
     return (
-        <header className="relative bg-bluetiful-light h-screen bg-globe bg-no-repeat bg-center">
+        <header className="relative bg-bluetiful-light h-screen bg-fixed bg-globe bg-no-repeat bg-center">
                 <NavBar/>
 
                 <div className="text-bluetiful text-center">
-                    <h1 className="text-5xl font-bold">Better Automation For Your School</h1>
+                    <h1 data-aos="fade-up" className="text-5xl font-bold">Better Automation For Your School</h1>
                     <p className="text-xl">We provide you with cloud-based infrastructure to 
                     safely secure <br/> the data of Africa’s next generation</p>
 
@@ -19,6 +26,8 @@ const Hero = () => {
                         </Button>
                     </div>
                 </div>
+
+            {/* <Image src="/svg/search.svg" className="absolute left-0 top-0" height="auto" width="auto"/>                 */}
 
             <div className="flex flex-row text-bluetiful p-10 pt-2">
                     <div className="col-4/12 w-full flex justify-right">
@@ -51,8 +60,7 @@ const Hero = () => {
                         <Image className="col-4/12" src="/svg/student_card.svg" height="300" width="auto"/>
                     </div>
             </div>
-            
-            <Image src="/svg/search.svg" className="absolute left-0 top-0" height="auto" width="auto"/>
+        
         </header>
     );
 }
