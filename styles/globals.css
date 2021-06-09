@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: 'Product Sans';
   src: url('/fonts/ProductSans-Bold.woff2') format('woff2'),
@@ -29,3 +30,8 @@
   transition: all 0.5s;
 }
 
+
+
+html{
+  font-family: 'Product Sans';
+}
