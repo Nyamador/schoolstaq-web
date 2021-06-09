@@ -1,26 +1,21 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import AOS from 'aos'
 
 import {NavBar, Button} from "../components";
 
 
-const Hero = () => {
-
-    useEffect(() => {
-        AOS.init()
-    },[])
+const Hero = ({onMobileNavClick}) => {
 
     return (
-        <header className="relative bg-bluetiful-light h-screen bg-fixed bg-globe bg-no-repeat bg-center">
-                <NavBar/>
+        <header className="relative bg-bluetiful-light md:h-full pb-20 bg-fixed bg-globe bg-no-repeat bg-center">
+                <NavBar onMobileNavClick={onMobileNavClick}/>
 
                 <div className="text-bluetiful text-center">
-                    <h1 data-aos="fade-up" className="text-5xl font-bold">Better Automation For Your School</h1>
-                    <p className="text-xl">We provide you with cloud-based infrastructure to 
+                    <h1 data-aos="fade-up" className="leading-snug p-4 md:leading-normal text-4xl md:text-5xl font-bold">Better Automation For Your School</h1>
+                    <p className="text-md md:text-xl break-words">We provide you with cloud-based infrastructure to 
                     safely secure <br/> the data of Africa’s next generation</p>
 
-                    <div className="mt-10">
+                    <div className="mt-10 mb-10 md:mb-0">
                         <Button>
                                 Get Started
                         </Button>
@@ -29,19 +24,19 @@ const Hero = () => {
 
             {/* <Image src="/svg/search.svg" className="absolute left-0 top-0" height="auto" width="auto"/>                 */}
 
-            <div className="flex flex-row text-bluetiful p-10 pt-2">
-                    <div className="col-4/12 w-full flex justify-right">
+            <div className="flex flex-col md:flex-row text-bluetiful p-4 md:px-10 md:pt-4 pt-2">
+                    <div className="md:order-1 order-2 md:col-4/12 md:block hidden w-full flex justify-center md:justify-right">
                         <Image className="ml-auto" src="/svg/metrics_cards.svg" height="300" width="auto"/>
                     </div>
 
-                    <div className="col-4/12 w-full m-auto flex items-center">
-                        <div className="flex flex-row mr-10">
+                    <div className="md:col-4/12 order-1 md:order-2 w-full m-auto flex md:flex-row flex-col items-center">
+                        <div className="flex flex-row mr-10 mb-10">
                                 <div className="flex flex-row justify-center mr-4 items-center h-12 w-12 rounded-full bg-white shadow-md">
                                     <Image src="/svg/student.svg" height="24" width="auto"/>
                                 </div>
                                 <div>
                                     <span>1k+</span>
-                                    <p className="text-tiny">Total student data <br/> under schoolstaq. </p>    
+                                    <p className="md:text-tiny text-normal">Total student data <br/> under schoolstaq. </p>    
                                 </div>
                         </div>
 
@@ -51,12 +46,12 @@ const Hero = () => {
                                 </div>
                                 <div>
                                     <span>1k+</span>
-                                    <p className="text-tiny">Schools onboarded <br/> onto schoolstaq.</p>
+                                    <p className="md:text-tiny text-normal">Schools onboarded <br/> onto schoolstaq.</p>
                                 </div>
                         </div> 
                     </div>
                     
-                    <div className="col-4/12 w-full m-auto flex items-center">
+                    <div className="md:col-4/12 order-3 w-full w-full m-auto flex justify-center md:justify-right">
                         <Image className="col-4/12" src="/svg/student_card.svg" height="300" width="auto"/>
                     </div>
             </div>

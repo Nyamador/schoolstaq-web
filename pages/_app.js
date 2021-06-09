@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function Schoolstaq({ Component, pageProps }) {
   
   useEffect(() => {
       AOS.init({
@@ -15,4 +15,4 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default Schoolstaq
