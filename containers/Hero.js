@@ -30,23 +30,23 @@ const Hero = ({onMobileNavClick}) => {
                     </div>
 
                     <div className="md:col-4/12 order-1 md:order-2 w-full m-auto flex md:flex-row flex-col items-center">
-                        <div className="flex flex-row mr-10 mb-10">
+                        <div className="flex flex-row mr-auto mb-10">
                                 <div className="flex flex-row justify-center mr-4 items-center h-12 w-12 rounded-full bg-white shadow-md">
                                     <Image src="/svg/student.svg" height="24" width="auto"/>
                                 </div>
                                 <div>
-                                    <span>1k+</span>
-                                    <p className="md:text-tiny text-normal">Total student data <br/> under schoolstaq. </p>    
+                                    <span className="font-bold text-2xl">1k+</span>
+                                    <p className="md:text-tiny text-normal">Students using schoolstaq. </p>    
                                 </div>
                         </div>
 
-                        <div className="flex flex-row">
+                        <div className="flex flex-row sm:mr-auto">
                                 <div className="flex flex-row justify-center mr-4 items-center h-12 w-12 rounded-full bg-white shadow-md">
                                     <Image src="/svg/house.svg" height="24" width="auto"/>
                                 </div>
                                 <div>
-                                    <span>1k+</span>
-                                    <p className="md:text-tiny text-normal">Schools onboarded <br/> onto schoolstaq.</p>
+                                    <span className="font-bold text-2xl">25+</span>
+                                    <p className="md:text-tiny text-normal">Schools onboarded onto schoolstaq</p>
                                 </div>
                         </div> 
                     </div>

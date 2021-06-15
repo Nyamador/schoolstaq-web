@@ -5,51 +5,60 @@ const Features = () => {
     const FeatureIcons = [
         {
             link: "/svg/student_feature.svg",
-            name: ""
+            name: "Student Records",
+            id: "1"
         },
         {
             link: "/svg/bill.svg",
-            name: ""
+            name: "Bill Payments",
+            id: "2"
         },
         {
             link: "/svg/analytics.svg",
-            name: ""
+            name: "Analytics",
+            id: "3"
         },
         {
             link: "/svg/staff.svg",
-            name: ""
+            name: "Staff Records",
+            id: "4"
+        },
+        {
+            link: "/svg/notifications.svg",
+            name: "Announcements",
+            id: "5"
         },
         {
             link: "/svg/attendance.svg",
-            name: ""
+            name: "Academic Records",
+            id: "6"
         },        
         {
-            link: "/svg/notifications.svg",
-            name: ""
-        },
-        {
             link: "/svg/webpage.svg",
-            name: ""
+            name: "Public School Profile",
+            id: "7"
         },
         {
-        link: "/svg/admission_link.svg",
-        name: ""
-    }    
+            link: "/svg/admission_link.svg",
+            name: "Digitized Forms",
+            id: "8"
+        }    
     ]
     
 
 
     return (
         <section className="px-6 py-20 md:px-20 md:py-20 text-bluetiful bg-bluetiful-light">
-            <div className="md:text-center">
-                <h3 data-aos="fade-up" className="text-2xl md:text-4xl font-bold">Our Core Features</h3>
-                <p className="mb-10">We provide you with cloud-based infrastructure to secure the data of Africa's next generation.</p>
+            <div className="md:text-center mb-20">
+                <h3 data-aos="fade-up" className="text-4xl font-bold">Our Core Features</h3>
+                <p className="mb-10 text-royal-dark-blue">We provide you with cloud-based infrastructure to secure the data of Africa's next generation.</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4">
                 {
-                    FeatureIcons.map(feature => <div className="flex flex-row justify-center mb-20">
-                            <Image src={feature.link} height="70" width="70"/>
+                    FeatureIcons.map(feature => <div className="flex flex-col items-center mb-20">
+                            <Image src={feature.link} height="70" width="70" alt={"Schoolstaq" + feature.name}/>
+                            <p className="text-royal-dark-blue font-bold mt-4">{feature.name}</p>
                         </div>
                 )}
             </div>
