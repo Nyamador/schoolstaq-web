@@ -16,7 +16,7 @@ const Hero = ({onMobileNavClick}) => {
                     safely secure <br/> the data of Africa’s next generation</p>
 
                     <div className="mt-10 mb-10 md:mb-0">
-                        <Button>
+                        <Button className="w-full md:w-auto">
                                 Get Started
                         </Button>
                     </div>
@@ -40,7 +40,7 @@ const Hero = ({onMobileNavClick}) => {
                                 </div>
                         </div>
 
-                        <div className="flex flex-row sm:mr-auto">
+                        <div className="flex flex-row mr-auto">
                                 <div className="flex flex-row justify-center mr-4 items-center h-12 w-12 rounded-full bg-white shadow-md">
                                     <Image src="/svg/house.svg" height="24" width="auto"/>
                                 </div>
@@ -51,9 +51,13 @@ const Hero = ({onMobileNavClick}) => {
                         </div> 
                     </div>
                     
-                    <div className="md:col-4/12 order-3 w-full w-full m-auto flex justify-center md:justify-right">
-                        <Image className="col-4/12" src="/svg/student_card.svg" height="300" width="auto"/>
+                    <div className="md:col-4/12 order-3 w-full m-auto flex justify-center md:justify-right">
+                        <Image src="/svg/student_card_new.svg" height="300" width="400"/>
                     </div>
+{/* 
+                    <div className="order-2 block md:hiddent">
+                        <Image src="/svg/dashboard_home_vector.svg" height="300" width="auto" title="Dashboard homepage of Schoolstaq"/>
+                    </div> */}
             </div>
         
         </header>
