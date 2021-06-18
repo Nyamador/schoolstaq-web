@@ -38,6 +38,15 @@ module.exports = {
         'red': '#FF0000',
         'grey': '#fbfbfb',
       },
+      animattion:{
+        'bounce-subtle': 'bounce-subtle ease-in-out infinite'
+      },
+      keyframes:{
+        'bounce-subtle':{
+          '0%, 100%': { transform: 'translateY(-15%)'},
+          '50%': {transform: 'none'}
+        }
+      },
       backgroundImage: theme => ({
         'globe': "url('/svg/globe.svg')",
         'search': "url('/svg/search.svg')",

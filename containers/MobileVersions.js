@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const MobileVersions = () => {
     return (
-        <section className="px-6 py-20 md:px-20 md:py-20">
+        <section data-aos="fade-up"  className="px-6 py-20 md:px-20 md:py-20">
                 <h3 className="text-2xl md:text-3xl md:text-center font-bold text-bluetiful mb-8">We're your strategic partner in scaling your school's advancement.</h3>
 
                 <div className="flex flex-row justify-center items-center">

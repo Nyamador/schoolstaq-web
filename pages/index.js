@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+import Aos from 'aos'
+
 
 import Button from '../components/Button'
 import Hero from '../containers/Hero'
@@ -18,6 +19,11 @@ export default function Home() {
     document.body.classList.add('overflow-hidden')
     
   }
+
+  useEffect(() => {
+    Aos.init();
+  }, [])
+
   useEffect(() => {
       mobileMenuOpened ? ToggleBodyOverflow() : document.body.classList.remove(['overflow-hidden'])
   }, [mobileMenuOpened])
@@ -26,6 +32,7 @@ export default function Home() {
     <>
         <Head>
             <title>Schoolstaq - Automate your school with Africa’s nextgen cloud ERP Solution</title>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
             <meta name="description" content="Automate your school with Africa’s nextgen cloud ERP Solution"/>
             <meta property="og:type" content="website"/>
             <meta property="og:site_name" content="SchoolStaq"/>
