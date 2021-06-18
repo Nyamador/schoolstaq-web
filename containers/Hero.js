@@ -12,8 +12,7 @@ const Hero = ({onMobileNavClick}) => {
 
                 <div className="text-bluetiful md:text-center p-4 md:p-0">
                     <h1 data-aos="fade-up" className="leading-snug md:p-4 md:leading-normal text-4xl md:text-5xl font-bold">Better Automation For Your School</h1>
-                    <p className="text-md md:text-xl break-words">We provide you with cloud-based infrastructure to 
-                    safely secure <br/> the data of Africa’s next generation</p>
+                    <p className="text-md md:text-xl break-words">We provide you with cloud-based infrastructure for administration of your institution.</p>
 
                     <div className="mt-10 mb-10 md:mb-0">
                         <Button className="w-full md:w-auto">

@@ -9,28 +9,25 @@ const Reasons = () => {
 
             <section className="md:flex md:flex-row">
                     <div className="md:w-6/12">
-                        <Image src="/svg/feature_banner_temp.svg" width="auto" height="300"/>
+                        <div className="w-full flex flex-row justify-center items-center" style={{'height': '300px', 'width': '300px'}}>
+                            <Image src="/svg/card_banner.svg" width="auto" height="auto"/>                            
+                        </div>
                         <h3 className="text-2xl font-bold">Unique Identity</h3>
                         <p className="text-royal-dark-blue">
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
+                            Students registered under schoolstaq have a universally unique identity, making it 
+                            easier to admit students from any other institution using schoolstaq.
                         </p>
                     </div>
 
                     <div className="md:w-6/12">
-                        <Image src="/svg/feature_banner_temp.svg" width="auto" height="300"/>
-                        <h3 className="text-2xl font-bold">Unique Identity</h3>
+                        <div className="w-full flex flex-row justify-center items-center" style={{'height': '300px', 'width': '300px'}}>
+                            <Image src="/svg/server.svg" width="auto" height="auto"/>
+                        </div>
+                        <h3 className="text-2xl font-bold">Data Integrity</h3>
                         <p className="text-royal-dark-blue">
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
-                        We provide you with cloud-based infrastructure to
-                        safely secure the data of Africa’s next generation
+                            Trust us, your data is safely secured and encrypted in the cloud.
+                            Retrieving data aged over a decade is simple without sorting through piles
+                            of paperwork to find a single transcript or student information.
                         </p>
                     </div>
             </section>            

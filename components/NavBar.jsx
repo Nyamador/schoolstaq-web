@@ -27,7 +27,7 @@ const NavBar = ({onMobileNavClick}) => {
                 </div>
 
                 <div className="block md:hidden ml-auto cursor-pointer" onClick={() => onMobileNavClick()}>
-                    <Image src="/svg/bars.svg" height="24px" width="24px"/>
+                    <img src="/svg/bars.svg" height="24px" width="24px"/>
                 </div>
         </nav>
     );

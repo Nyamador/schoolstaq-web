@@ -31,6 +31,9 @@
 }
 
 
+button:active{
+  transform: scale(0.95);
+}
 
 html{
   font-family: 'Product Sans';

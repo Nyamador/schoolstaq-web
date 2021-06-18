@@ -14,14 +14,16 @@ const Footer = () => {
                         <small className="text-capri text-sm">A Product of Velocity</small>
                 </section>
 
-                <section className="md:w-6/12 mb-4 md:mb-0 flex flex flex-row justify-center">
-                    <ul className="flex flex-row">
+                <section className="md:w-7/12 mb-4 md:mb-0 flex flex flex-row justify-center items-center">
+                    <ul className="text-tiny md:text-normal flex flex-row justify-center items-center">
                         <li className="mr-4"><a>Help</a></li>
                         <li className="mr-4"><a>Privacy Policy</a></li>
+                        {/* <li className="mr-4"><a>E-learning <span className="text-tiny">(Coming Soon )</span></a></li>
+                        <li className="mr-4"><a>Online Store<span className="text-tiny">(Coming Soon )</span></a></li> */}
                     </ul>
                 </section>
 
-                <section className="md:w-3/12">
+                <section className="md:w-2/12">
                     <div className="flex flex-row justify-end">
                         <div className="mr-2">
                             <Image src="/svg/facebook_white.svg" alt="SchoolStaq Facebook" height="25" width="25"/>
