@@ -26,6 +26,16 @@ export default function Home() {
     <>
         <Head>
             <title>Schoolstaq - Automate your school with Africa’s nextgen cloud ERP Solution</title>
+            <meta name="description" content="Automate your school with Africa’s nextgen cloud ERP Solution"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:site_name" content="SchoolStaq"/>
+            <meta property="og:locale" content="en_GH"/>
+            <meta property="og:title" content="Automate Your School - SchoolStaq"/>
+            <meta property="og:description" content="Join SchoolStaq today and automate your school's administration!"/>
+            <meta property="og:image" content="/seo_banner.svg"/>
+            <meta property="og:url" content="https://www.schoolstaq.com"/>
+            <meta name="robots" content="index, follow"/>
+            <meta name="theme-color" content="#0066f5"/>
         </Head>
 
         <main className="">
@@ -39,7 +49,7 @@ export default function Home() {
         <nav className={`${mobileMenuOpened ? "absolute" : "hidden"} transition-all top-0 bottom-0 bg-bluetiful h-screen w-full`}>
             <div className="p-10">
                  <div className="flex flex-row items-center justify-end" onClick={() => setMobileMenuOpened(false)}>
-                    <Image className="ml-auto" src="/svg/times-circle.svg" height="24" width="24"/>
+                    <img className="ml-auto" src="/svg/times-circle.svg" height="24" width="24"/>
                     {/* <small className="text-white text-md ml-2">Close</small> */}
                  </div>
             </div>
@@ -62,6 +72,35 @@ export default function Home() {
             </div>
         </nav>
 
+
+        <script type="application/ld+json">
+        {{
+            "@context" : "http://schema.org",
+            "@type" : "Organization",
+            "brand": "SchoolStaq",
+            "description": "Automate your school with Africa’s nextgen cloud ERP Solution",
+            "name" : "SchoolStaq",
+            "alternateName": ["SchoolStaq Ghana", "SchoolStaq", "SchoolStaq.com", "SchoolStaq Africa"],
+            "founders": [
+              "Desmond Nyamador",
+              "Ebenezer Vondee",
+              "Jude Hodzo"
+            ],
+            "foundingDate": "2020-02",
+            "foundingLocation": "Accra",
+            "knowsAbout": "School ERP Software",
+            "legalName": "Velocity Technologies.",
+            "logo" : "'/schoolstaq.png",
+            "url" : "https://www.schoolstaq.com",
+            "sameAs" : [
+              "https://www.facebook.com/schoolstaq",
+              "https://www.twitter.com/schoolstaq",
+              "https://instagram.com/schoolstaq",
+              "https://www.linkedin.com/company/schoolstaq"
+            ],
+            "slogan": "Impacting the future of Africa's next generation."
+        }}
+      </script>
         </main>
     </>
   )
