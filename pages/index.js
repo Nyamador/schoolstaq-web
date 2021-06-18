@@ -36,6 +36,34 @@ export default function Home() {
             <meta property="og:url" content="https://www.schoolstaq.com"/>
             <meta name="robots" content="index, follow"/>
             <meta name="theme-color" content="#0066f5"/>
+{/* 
+            <script type="application/ld+json">
+          {{"@context" : "http://schema.org",
+            "@type" : "Organization",
+            "brand": "SchoolStaq",
+            "description": "Automate your school with Africa’s nextgen cloud ERP Solution",
+            "name" : "SchoolStaq",
+            "alternateName": ["SchoolStaq Ghana", "SchoolStaq", "SchoolStaq.com", "SchoolStaq Africa"],
+            "founders": [
+              "Desmond Nyamador",
+              "Ebenezer Vondee",
+              "Jude Hodzo"
+            ],
+            "foundingDate": "2020-02",
+            "foundingLocation": "Accra",
+            "knowsAbout": "School ERP Software",
+            "legalName": "Velocity Technologies.",
+            "logo" : "'/schoolstaq.png",
+            "url" : "https://www.schoolstaq.com",
+            "sameAs" : [
+              "https://www.facebook.com/schoolstaq",
+              "https://www.twitter.com/schoolstaq",
+              "https://instagram.com/schoolstaq",
+              "https://www.linkedin.com/company/schoolstaq"
+            ],
+            "slogan": "Impacting the future of Africa's next generation."
+        }}
+      </script>             */}
         </Head>
 
         <main className="">
@@ -73,34 +101,6 @@ export default function Home() {
         </nav>
 
 
-        <script type="application/ld+json">
-        {{
-            "@context" : "http://schema.org",
-            "@type" : "Organization",
-            "brand": "SchoolStaq",
-            "description": "Automate your school with Africa’s nextgen cloud ERP Solution",
-            "name" : "SchoolStaq",
-            "alternateName": ["SchoolStaq Ghana", "SchoolStaq", "SchoolStaq.com", "SchoolStaq Africa"],
-            "founders": [
-              "Desmond Nyamador",
-              "Ebenezer Vondee",
-              "Jude Hodzo"
-            ],
-            "foundingDate": "2020-02",
-            "foundingLocation": "Accra",
-            "knowsAbout": "School ERP Software",
-            "legalName": "Velocity Technologies.",
-            "logo" : "'/schoolstaq.png",
-            "url" : "https://www.schoolstaq.com",
-            "sameAs" : [
-              "https://www.facebook.com/schoolstaq",
-              "https://www.twitter.com/schoolstaq",
-              "https://instagram.com/schoolstaq",
-              "https://www.linkedin.com/company/schoolstaq"
-            ],
-            "slogan": "Impacting the future of Africa's next generation."
-        }}
-      </script>
         </main>
     </>
   )
