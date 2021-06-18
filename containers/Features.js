@@ -48,7 +48,7 @@ const Features = () => {
 
 
     return (
-        <section className="px-6 py-20 md:px-20 md:py-20 text-bluetiful bg-bluetiful-light">
+        <section className="px-6 py-20 md:px-20 md:py-20 text-bluetiful bg-bluetiful-light" id="features">
             <div data-aos="fade-up" className="md:text-center mb-20">
                 <h3 className="text-3xl font-bold">Our Core Features</h3>
                 <p className="mb-10 text-royal-dark-blue">We provide you with cloud-based infrastructure to secure the data of Africa's next generation.</p>
@@ -56,7 +56,7 @@ const Features = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4">
                 {
-                    FeatureIcons.map(feature => <div data-aos="fade-up"  className="flex flex-col items-center mb-20">
+                    FeatureIcons.map(feature => <div data-aos="fade-up" key={feature.id} className="flex flex-col items-center mb-20">
                             <Image src={feature.link} height="70" width="70" alt={"Schoolstaq" + feature.name}/>
                             <p className="text-royal-dark-blue font-bold mt-4">{feature.name}</p>
                         </div>

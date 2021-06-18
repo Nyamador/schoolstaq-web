@@ -4,7 +4,7 @@ import Image from "next/image";
 import {NavBar, Button} from "../components";
 
 
-const Hero = ({onMobileNavClick}) => {
+const Hero = ({onMobileNavClick, onGetStartedClick}) => {
 
     return (
         <header className="relative bg-bluetiful-light md:h-full pb-20 bg-fixed bg-globe bg-no-repeat bg-center">
@@ -15,7 +15,7 @@ const Hero = ({onMobileNavClick}) => {
                     <p  className="text-md md:text-xl break-words">We provide you with cloud-based infrastructure for administration of your institution.</p>
 
                     <div className="mt-10 mb-10 md:mb-0">
-                        <Button className="w-full md:w-auto">
+                        <Button className="w-full md:w-auto" onClick={() => onGetStartedClick()}>
                                 Get Started
                         </Button>
                     </div>

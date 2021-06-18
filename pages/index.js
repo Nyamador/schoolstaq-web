@@ -13,6 +13,7 @@ import ManageYourSchool from '../containers/ManageYourSchool'
 
 export default function Home() {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false)
+  const [modalToggled, setModalToggled] = useState(false)
 
   const ToggleBodyOverflow = () => {
     window.scrollTo(0,0)
@@ -25,8 +26,8 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-      mobileMenuOpened ? ToggleBodyOverflow() : document.body.classList.remove(['overflow-hidden'])
-  }, [mobileMenuOpened])
+      mobileMenuOpened || modalToggled ? ToggleBodyOverflow() : document.body.classList.remove(['overflow-hidden'])
+  }, [mobileMenuOpened, modalToggled])
 
   return (
     <>
@@ -74,7 +75,7 @@ export default function Home() {
         </Head>
 
         <main className="">
-        <Hero onMobileNavClick={() => {mobileMenuOpened ? setMobileMenuOpened(false) : setMobileMenuOpened(true)}}/>
+        <Hero onGetStartedClick={() => modalToggled ? setModalToggled(false) : setModalToggled(true)} onMobileNavClick={() => {mobileMenuOpened ? setMobileMenuOpened(false) : setMobileMenuOpened(true)}}/>
         <Reasons/>
         <Features/>
         <ManageYourSchool/>
@@ -100,7 +101,7 @@ export default function Home() {
                   </div> 
 
                   <div className="p-4 transition-all">
-                    <button className="text-4xl font-bold text-white bg-capri px-6 py-2 rounded-md">
+                    <button onClick={() => setModalToggled(true)} className="text-4xl font-bold text-white bg-capri px-6 py-2 rounded-md">
                       Sign Up
                     </button>
                   </div>                                   
@@ -109,6 +110,39 @@ export default function Home() {
 
 
         </main>
+
+        <div onClick={() => setModalToggled(!modalToggled)} className={`bg-black h-screen w-screen absolute top-0 bottom-0 opacity-50 ${!modalToggled && "hidden"}`} />
+        <aside className={`w-11/12 md:w-5/12 h-3/4 m-auto absolute top-0 bottom-0 right-0 left-0 z-10 ${!modalToggled && "hidden"}`}>
+            <div className="bg-white rounded-md p-10">
+              <div className="flex flex-row items-center">
+                <p className="text-bluetiful font-bold text-2xl">Get In Touch</p>
+                <div className="text-red ml-auto cursor-pointer" onClick={() => setModalToggled(false)}><img src="/svg/close.svg" height="20" width="20"/></div>                
+              </div>
+
+              <div className="mt-4">
+                <label htmlFor="schoolName" className="text-royal-dark-blue mb-2">School Name</label>
+                <input placeholder="SchoolStaq International" className={`p-2 mb-4 border border-gray-200 w-full focus:ring-bluetiful rounded-md focus:outline-none focus:ring-2 text-black`} id="schoolName"></input>
+              </div>
+
+              <div>
+                <label htmlFor="contactPerson" className="text-royal-dark-blue mb-2">Contact Person</label>
+                <input placeholder="John Doe" className={`p-2 mb-4 border border-gray-200 w-full focus:ring-bluetiful rounded-md focus:outline-none focus:ring-2 text-black`} id="contactPerson"></input>
+              </div>      
+
+
+              <div>
+                <label htmlFor="telephone" className="text-royal-dark-blue mb-2">Telephone</label>
+                <input placeholder="023 099 1249" className={`p-2 mb-4 border border-gray-200 w-full focus:ring-bluetiful rounded-md focus:outline-none focus:ring-2 text-black`} id="telephone"></input>
+              </div>      
+                      
+
+              <div className="ml-auto">
+                <Button>
+                    Submit
+                </Button>                
+              </div>
+            </div>
+        </aside>        
     </>
   )
 }

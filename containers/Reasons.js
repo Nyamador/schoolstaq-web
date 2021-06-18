@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Reasons = () => {
     return (
-        <div className="px-6 py-20 md:px-20 md:py-20  text-bluetiful">
+        <div className="px-6 py-20 md:px-20 md:py-20  text-bluetiful" id="about">
             <div>
                 <h2 data-aos="fade-up" className="text-3xl font-bold md:text-center">What makes our platform one of a kind</h2>
             </div>
