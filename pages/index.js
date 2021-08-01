@@ -43,7 +43,20 @@ export default function Home() {
             <meta property="og:image" content="/seo_banner.svg"/>
             <meta property="og:url" content="https://www.schoolstaq.com"/>
             <meta name="robots" content="index, follow"/>
-            <meta name="theme-color" content="#0066f5"/>
+             <meta name="theme-color" content="#0066f5" />
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KWKZMT87N"></script>
+            <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8KWKZMT87N', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
 {/* 
             <script type="application/ld+json">
           {{"@context" : "http://schema.org",
